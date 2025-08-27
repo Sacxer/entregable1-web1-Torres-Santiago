@@ -14,6 +14,10 @@
                 <div id="logo">ST</div>
                 <span>Santiago Torres</span>
             </div>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </label>
             <nav id="menu">
                 <a href="#sobre-mi">Sobre mí</a>
                 <a href="#habilidades">Habilidades</a>
@@ -24,11 +28,17 @@
         </div>
     </header>
     <main class="container">
-        <section id="presentacion">
+        <div class="social-links">
+            <a id="face" href="https://web.facebook.com/santiago.torres.209106/?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a id="whats" href="https://wa.me/573118898946"" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a id="linke" href="https://www.linkedin.com/in/santiago-torres-rodríguez-1583a5250" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a id="insta" href="https://www.instagram.com/sa_to_ro26" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <section id="presentacion"> 
             <div id="descripcion">
                 <h1>Ingeniero de Sistemas (en formación) — desarrollo web, automatización y soluciones eficientes.</h1>
                 <p>Me enfoco en construir interfaces limpias y sistemas robustos, con especial interés en optimizar procesos y crear experiencias de usuario claras.</p>
-            </div>  
+            </div>
             <div class="cuadro-datos">
                     <div class="splits">  
                         <div id="imagen">ST</div>
@@ -47,16 +57,10 @@
                             <span class="pill">🔗 github.com/Sacxer</span>
                         </div>
                     </div>
-                    <div class="social-links">
-                        <a href="https://web.facebook.com/santiago.torres.209106/?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://wa.me/573118898946"" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.linkedin.com/in/santiago-torres-rodríguez-1583a5250" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/sa_to_ro26" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
             </div>
         </section>
         <section id="sobre-mi" class="color-blanco">
-            <div id="presen-sobre-mi">
+            <div class="section-head">
                 <h2>Sobre mí</h2>
                 <span class="pill">Profesional</span>
             </div>
@@ -70,10 +74,140 @@
                 </ul>
             </div>
         </section>
-        <section id="prueba"></section>
+        <section id="habilidades" class="color-blanco">
+            <div class="section-head">
+                <h2>Habilidades</h2>
+            </div>
+            <div class="cuadro-datos color-blanco">
+                <div class="contenedor-grid">
+                    <div class="card">
+                        <h3>Habilidades Técnicas</h3>
+                        <div class="tags">
+                            <span class="tag"><i class="fa-brands fa-html5"></i> Html</span>
+                            <span class="tag"><i class="fa-brands fa-java"></i> Java</span>
+                            <span class="tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                            <span class="tag"><i class="fa-brands fa-python"></i> Python</span>
+                        </div>
+                        <div class="meter">
+                            <div id="barra1"></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Habilidades Contables/Administrativas</h3>
+                        <div class="tags">
+                            <span class="tag">Contabilización de operaciones</span>
+                            <span class="tag">Conciliaciones bancarias</span>
+                            <span class="tag">Facturación</span>
+                            <span class="tag">Informes fin  ancieros</span>
+                            <span class="tag">Manejo de software contable</span>
+                        </div>
+                        <div class="meter">
+                            <div id="barra2"></div>
+                        </div>                        
+                    </div>
+                    <div class="card">
+                        <h3>Habilidades Personales</h3>
+                        <div class="tags">
+                            <span class="tag animacion">Arroz</span>
+                            <span class="tag">Trabajo en equipo</span>
+                            <span class="tag">Adaptabilidad</span>
+                            <span class="tag">Comunicación efectiva</span>
+                            <span class="tag">Responsabilidad</span>
+                            <span class="tag">Orientación al detalle</span>
+                        </div>
+                        <div class="meter">
+                            <div id="barra3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experiencia" class="color-blanco">
+            <div class="section-head">
+                <h2>Experiencia</h2>
+                <span class="pill">+2 años</span>
+            </div>
+            <div class="cuadro-datos">
+                <div class="card">
+                    <div class="timeline">
+                        <div class="t-item">
+                            <div class="t-role">EMSERPUCAR / Auxiliar contable</div>
+                            <div class="t-ubicacion">Cartagena del Chaira, Caquetá · 2021 — 2022</div>
+                            <p>Apoyo en registros contables, conciliaciones bancarias, facturación y elaboración de informes financieros.</p>
+                        </div>
+                        <div class="t-item">
+                            <div class="t-role">Proyectovison / Auxiliar administrativo</div>
+                            <div class="t-ubicacion">Valparaíso, Caquetá · 2022 — 2024</div>
+                            <p>Gestión administrativa y apoyo técnico en la configuración de servidores de TV y redes, además de tareas de archivo, coordinación y soporte operativo.</p>
+                        </div>
+                        <div class="t-item">
+                            <div class="t-role">SpidNet — Fundador / Soporte IT</div>
+                            <div class="t-ubicacion">Valparaíso, Caquetá · 2025 — actual</div>
+                            <p>Implementación de red de fibra, configuración de servidores y atención a clientes. Automatización de tareas y monitoreo básico.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="educacion" class="color-blanco">
+            <div class="section-head">
+                <h2>Educación</h2>
+                <span class="pill">Actualizado 2025</span>
+            </div>
+            <div class="cuadro-datos">
+                <div class="contenedor-grid contenedor-grid2">
+                    <div class="card">
+                        <h3>SENA</h3>
+                        <div class="t-meta">Técnico en Contabilización de Operaciones Financieras</div>
+                        <p>Formación en registro y análisis de operaciones contables, conciliaciones bancarias, elaboración de informes financieros y cumplimiento de obligaciones tributarias.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Universidad de la Amazonia</h3>
+                        <div class="t-meta">Ingeniería de Sistemas — 5° semestre</div>
+                        <p>Énfasis en estructuras de datos, OOP en Java, algoritmos y sistemas.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Formación adicional</h3>
+                        <ul>
+                            <li>Git y control de versiones</li>
+                            <li>Fundamentos de Redes</li>
+                            <li>Diseño web responsivo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="contact color-blanco">
+            <div class="section-head">
+                <h2>Contacto</h2>
+                <span class="pill">¿Hablamos?</span>
+            </div>
+            <div class="card">
+                <form class="stack" action="mailto:sacxer24@gmail.com" method="post" enctype="text/plain">
+                    <div class="contact-grid">
+                        <div class="field">
+                            <label for="nombre">Nombre</label>
+                            <input class="input" id="nombre" name="Nombre" placeholder="Tu nombre" required />
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input class="input" id="email" type="email" name="Email" placeholder="tunombre@email.com" required />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="Mensaje" placeholder="Cuéntame sobre tu proyecto" required></textarea>
+                    </div>
+                    <div class="actions">
+                        <button class="btn" type="submit">Enviar</button>
+                        <a class="btn ghost" href="mailto:sacxer24@gmail.com?subject=Proyecto">Abrir en correo</a>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
-    <footer>
-
+    <footer class="container">
+            <small>© <span id="year">2025</span> Santiago Torres — Portafolio</small>
     </footer>
 </body>
 </html>

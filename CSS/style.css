@@ -37,6 +37,15 @@ a:hover{
 ul{
     padding: 0 40px;
 }
+main{
+    position: relative  ;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
 
 .nav-interna{
     display: flex;
@@ -58,6 +67,21 @@ ul{
     gap: 12px;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    gap: 12px;
+    background: #12141a;
+    border: 1px solid #1e2230;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.contenedor-grid .card { 
+    padding: 16px;
+}
+
 .pill{
     color: #a7f3d0;
     display: inline-flex;
@@ -69,8 +93,34 @@ ul{
     border: 1px solid #1e2230;
 }
 
+.tags { 
+    display:flex; 
+    flex-wrap: wrap;
+    gap:8px; 
+}
+
+.tag { 
+    padding:8px 10px; 
+    border-radius:10px; 
+    border:1px solid #1e2230; 
+    background: rgba(255,255,255,.03); 
+    font-size:14px; 
+}
+
+.tag:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
 .color-blanco{
     color: #becdfa;
+}
+
+.section-head{
+    display:flex; 
+    align-items:center; 
+    justify-content:space-between; 
+    margin-bottom:10px;
 }
 
 .cuadro-datos{
@@ -82,13 +132,29 @@ ul{
 }
 
 .social-links {
-    position: absolute;
-    right: 20px;
-    top: 70%;
-    transform: translateY(-50%);
+    position: fixed;    
+    top: 55%;
+    left: 87%;
+    justify-self: end;
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+#face:hover{
+    background: color-mix(in oklab, rgb(56, 56, 250) 98%, transparent);
+}
+
+#whats:hover{
+    background: green;
+}
+
+#linke:hover{
+    background: rgb(0, 0, 255);
+}
+
+#insta:hover{
+    background: rgb(253, 72, 0);
 }
 
 .social-links a {
@@ -97,7 +163,7 @@ ul{
     justify-content: center;
     width: 45px;
     height: 45px;
-    background: #000;
+    background: color-mix(in oklab, #0b0c0f 82%, transparent);
     color: white;
     border-radius: 50%;
     font-size: 20px;
@@ -107,6 +173,155 @@ ul{
 
 .social-links a:hover {
     background: #1abc9c;
+}
+
+.meter { 
+    height: 10px; 
+    background: #0a0c12; 
+    border:1px solid #1e2230; 
+    border-radius: 999px; 
+    overflow: hidden; 
+}
+
+.menu-icon {
+    display: block;
+    font-size: 32px;
+    color: #e6e8eb;
+    cursor: pointer;
+    padding: 8px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.nav-interna {
+    position: relative;
+}
+
+.timeline { 
+    position: relative; 
+    padding-left: 18px; 
+}
+
+.timeline::before { 
+    content:""; 
+    position:absolute; 
+    top:0; 
+    bottom:0; 
+    margin: 10px;
+    left:6px; 
+    width:2px; 
+    background: rgb(138, 173, 238); 
+}
+
+.t-item { 
+    position:relative; 
+    padding: 8px 0 8px 12px; 
+}
+
+.t-item::before { 
+    content:""; 
+    position:absolute; 
+    left:12; 
+    top:14px; 
+    width:12px; 
+    height:12px; 
+    border-radius:50%; 
+    background: #6ee7b7; 
+    box-shadow: 0 0 0 3px color-mix(in oklab, #6ee7b7 25%, #12141a); 
+    border:1px solid color-mix(in oklab, #6ee7b7 60%, black); 
+}
+
+.t-role { 
+    position: relative;
+    font-weight:600;
+    top: 0px;
+    left: 30px;
+}
+
+.t-ubicacion { 
+    color: #a1a6b0; 
+    font-size: 14px; 
+}
+
+.contact .card { 
+    padding: 18px; 
+}
+
+.contact-grid { 
+    display:grid; 
+    gap:14px; 
+    grid-template-columns: 1fr 1fr; 
+}
+
+.field { 
+    display:flex; 
+    flex-direction:column; 
+    gap:6px; 
+}
+
+.field label {
+    font-weight:600; 
+    font-size:14px; 
+}
+
+.input, textarea { 
+    width:100%; 
+    padding:12px 14px; 
+    border-radius:12px; 
+    border:1px solid #1e2230; 
+    background: rgba(255,255,255,.03); 
+    color: #e6e8eb; 
+}
+
+textarea { 
+    min-height: 120px; 
+    resize: vertical; 
+}
+
+.actions { 
+    display:flex; 
+    gap:10px; 
+    align-items:center; 
+    flex-wrap: wrap; 
+}
+
+.stack {
+    display:flex; 
+    flex-direction:column; 
+    gap:12px; 
+}
+
+.btn { 
+    display:inline-block; 
+    padding:12px 16px; 
+    border-radius:12px; 
+    font-weight:600; 
+    background: #6ee7b7; 
+    color: #064e3b; 
+    border:1px solid color-mix(in oklab,#6ee7b7 70%, black); 
+    box-shadow: 0 10px 30px rgba(0,0,0,.35); 
+}
+
+.btn:hover { 
+    transform: translateY(-1px); 
+    filter: brightness(1.02); 
+    text-decoration:none; 
+}
+
+.ghost { 
+    background: transparent; 
+    border:1px solid #1e2230; 
+    color: #e6e8eb; 
+}
+
+.ghost:hover { 
+    background: rgba(255,255,255,.04); 
+}
+
+#menu-toggle:checked + .menu-icon + #menu {
+    display: flex;
 }
 
 #cont-logo{
@@ -130,17 +345,27 @@ ul{
     box-shadow: 0 10px 30px rgba(0,0,0,.35);
 }
 
-#menu{
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
+#menu {
+    display: none;
+    position: absolute;
+    top: 64px;
+    right: 24px;
+    background: #12141a;
+    flex-direction: column;
+    gap: 0;
+    width: 180px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    padding: 16px 0;
+    z-index: 100;
 }
 
-#menu a{
-    color: #2d4aa0;
-    padding: 8px 12px;
-    border-radius: 10px;
-    border: 1px solid t ransparent;
+#menu a {
+    color: #becdfa;
+    padding: 12px 24px;
+    border-radius: 0;
+    border: none;
+    display: block;
 }
 
 #menu a:hover { 
@@ -154,7 +379,7 @@ ul{
     padding: 48px 0 12px;
     display: grid;
     gap: 28px;
-    grid-template-columns: 1.1fr .9fr;
+    grid-template-rows: 1.1fr .9fr;
     align-items: center;
 }
 
@@ -198,16 +423,82 @@ ul{
     gap: 12px;
 }
 
-#presen-sobre-mi{
-    display:flex; 
-    align-items:center; 
-    justify-content:space-between; 
-    margin-bottom:10px;
+.contenedor-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
 }
 
-#prueba{
-    height: 1000px;
+.contenedor-grid2{
+    grid-template-rows: 1fr 1fr 1fr; 
 }
-footer{
-    height: 3000px;
+
+#barra1 { 
+    height: 100%; 
+    background: linear-gradient(90deg, #0ea5e9, #a7f3d0); 
+    width: 60%;
 }
+
+#barra2 { 
+    height: 100%; 
+    background: linear-gradient(90deg, #0ea5e9, #a7f3d0); 
+    width: 80%;
+}
+
+#barra3 { 
+    height: 100%; 
+    background: linear-gradient(90deg, #0ea5e9, #a7f3d0); 
+    width: 40%;
+}
+
+@media (min-width: 900px) {
+    #menu {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        background: none;
+        box-shadow: none;
+        width: auto;
+        padding: 0;
+    }
+
+    #menu a {
+        padding: 8px 12px;
+        border-radius: 12px;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    
+    #presentacion{
+        padding: 48px 0 12px;
+        display: grid;
+        gap: 28px;
+        grid-template-columns: 1.1fr 0.9fr; 
+        grid-template-rows: none;
+        align-items: center;
+    }
+
+    .social-links {
+        position: fixed;    
+        top: 60%;
+        left: 95%;
+        justify-self: end;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contenedor-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: none;
+        gap: 15px;
+    }
+}   

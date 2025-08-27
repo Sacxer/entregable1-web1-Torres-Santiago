@@ -558,8 +558,13 @@ textarea {
     }
 
     .social-links {
-        top: 75%;
-        left: 90%;
+        position: fixed;    
+        top: 60%;
+        left: 93%;
+        justify-self: end;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .timeline {

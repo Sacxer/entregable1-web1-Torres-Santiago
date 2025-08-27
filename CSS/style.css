@@ -45,7 +45,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
- }
+}
 
 .nav-interna{
     display: flex;
@@ -163,6 +163,11 @@ footer {
 
 #insta:hover{
     background: rgb(253, 72, 0);
+}
+
+.social-links img{
+    width: 30px;
+    height: 30px;
 }
 
 .social-links a {
@@ -336,6 +341,10 @@ textarea {
 
 #menu-toggle:checked + .menu-icon + #menu {
     display: flex;
+}
+
+#habilidades img{
+    width: 19px;
 }
 
 #cont-logo{

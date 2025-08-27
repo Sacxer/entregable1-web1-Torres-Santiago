@@ -70,7 +70,6 @@ footer {
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
     gap: 12px;
     background: #12141a;
     border: 1px solid #1e2230;
@@ -91,6 +90,11 @@ footer {
     border-radius: 999px;
     background: linear-gradient(180deg, rgba(255, 255, 255, .06), transparent);
     border: 1px solid #1e2230;
+}
+
+.pill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .tags { 
@@ -139,6 +143,10 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+#habilidades .card{
+    justify-content: space-between  ;
 }
 
 #face:hover{
@@ -249,10 +257,15 @@ footer {
     padding: 18px; 
 }
 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
 .contact-grid { 
     display:grid; 
     gap:14px; 
-    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
 }
 
 .field { 
@@ -298,8 +311,8 @@ textarea {
     padding:12px 16px; 
     border-radius:12px; 
     font-weight:600; 
-    background: #6ee7b7; 
-    color: #064e3b; 
+    background: #2d3331; 
+    color: #ffffff; 
     border:1px solid color-mix(in oklab,#6ee7b7 70%, black); 
     box-shadow: 0 10px 30px rgba(0,0,0,.35); 
 }
@@ -307,7 +320,8 @@ textarea {
 .btn:hover { 
     transform: translateY(-1px); 
     filter: brightness(1.02); 
-    text-decoration:none; 
+    text-decoration:none;
+    background: #6ee7b7; 
 }
 
 .ghost { 
@@ -405,7 +419,7 @@ textarea {
 #imagen{
     width: 120px;
     height: 120px;
-    border-radius: 28px;
+    border-radius: 60px;
     background: linear-gradient(135deg, #6ee7b7, #a7f3d0);
     display: grid;
     place-items: center;
@@ -423,6 +437,7 @@ textarea {
     gap: 12px;
 }
 
+
 .contenedor-grid{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -436,7 +451,7 @@ textarea {
 #barra1 { 
     height: 100%; 
     background: linear-gradient(90deg, #0ea5e9, #a7f3d0); 
-    width: 60%;
+    width: 75%;
 }
 
 #barra2 { 
@@ -448,7 +463,7 @@ textarea {
 #barra3 { 
     height: 100%; 
     background: linear-gradient(90deg, #0ea5e9, #a7f3d0); 
-    width: 40%;
+    width: 90%;
 }
 
 @media (min-width: 900px) {
@@ -501,4 +516,60 @@ textarea {
         grid-template-rows: none;
         gap: 15px;
     }
-}   
+
+    .contact-grid { 
+    display:grid; 
+    gap:14px; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none; 
+    }
+}  
+
+@media (min-width: 600px) and (max-width: 899px) {
+
+    #presentacion {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        text-align: center;
+    }
+
+    #descripcion {
+        align-items: center;
+    }
+
+    #descripcion h1 {
+        font-size: clamp(24px, 4vw, 36px);
+        line-height: 1.2;
+    }
+
+    .splits {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contenedor-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .contenedor-grid2 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .social-links {
+        top: 75%;
+        left: 90%;
+    }
+
+    .timeline {
+        padding-left: 10px;
+    }
+    .t-role {
+        left: 20px;
+        font-size: 15px;
+    }
+    .t-ubicacion {
+        font-size: 13px;
+    }
+}
